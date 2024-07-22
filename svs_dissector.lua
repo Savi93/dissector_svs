@@ -47,9 +47,9 @@ function svs_protocol.dissector(buffer, pinfo, tree)
 			params_str = "FULL SCREEN"
 		elseif params == 0x02 then
 			params_str = "BOTTOM HALF"
-		elseif params_str == 0x04 then
+		elseif params == 0x04 then
 			params_str = "CENTRE BLOCK"
-		elseif params_str == 0x08 then
+		elseif params == 0x08 then
 			params_str = "TOP HALF"
 		end
 
@@ -60,7 +60,7 @@ function svs_protocol.dissector(buffer, pinfo, tree)
 			params_str = "DAY"
 		elseif params == 0x02 then
 			params_str = "IR/WHITE HOT"
-		elseif params_str == 0x04 then
+		elseif params == 0x04 then
 			params_str = "IR/BLACK HOT"
 		end 	
 
